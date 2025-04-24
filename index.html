@@ -21,28 +21,14 @@
   <main>
     <section id="home" class="section">
       <h2>Selamat Datang di Toko Buku Online</h2>
-      <p>Temukan berbagai buku menarik untuk Anda baca dan pelajari!</p>
+      <p>Kami menyediakan berbagai pilihan buku terbaik, mulai dari teknologi, pemrograman, hingga pengembangan diri. Jelajahi koleksi kami dan temukan buku yang cocok untuk kamu!</p>
+      <p>Belanja buku jadi lebih mudah, cepat, dan nyaman hanya di Toko Buku Online. Dapatkan juga promo menarik setiap minggunya!</p>
     </section>
 
     <section id="catalog" class="section catalog">
       <h2>Daftar Buku</h2>
-      <div class="book-list">
-        <div class="book-card" onclick="showDetail('Belajar HTML & CSS', 'Andi Prasetyo', 'Rp50.000')">
-          <h3>Belajar HTML & CSS</h3>
-          <p>Penulis: Andi Prasetyo</p>
-          <p>Harga: Rp50.000</p>
-        </div>
-        <div class="book-card" onclick="showDetail('Dasar-Dasar JavaScript', 'Rina Setiawan', 'Rp65.000')">
-          <h3>Dasar-Dasar JavaScript</h3>
-          <p>Penulis: Rina Setiawan</p>
-          <p>Harga: Rp65.000</p>
-        </div>
-        <div class="book-card" onclick="showDetail('Web Programming untuk Pemula', 'Budi Santoso', 'Rp75.000')">
-          <h3>Web Programming untuk Pemula</h3>
-          <p>Penulis: Budi Santoso</p>
-          <p>Harga: Rp75.000</p>
-        </div>
-      </div>
+      <div class="book-list" id="bookList"></div>
+
       <div id="book-detail" class="book-detail hidden">
         <h3 id="detail-title"></h3>
         <p id="detail-author"></p>
@@ -59,7 +45,7 @@
   </main>
 
   <footer>
-    <p>Kontak: tokobuku@email.com | Telp: 0812-3456-7890</p>
+    <p>© 2025 Toko Buku Online. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
