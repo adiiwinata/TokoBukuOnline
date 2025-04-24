@@ -11,68 +11,57 @@
     <h1>Toko Buku Online</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Catalog</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="catalog">
+    <section id="home" class="section">
+      <h2>Selamat Datang di Toko Buku Online</h2>
+      <p>Temukan berbagai buku menarik untuk Anda baca dan pelajari!</p>
+    </section>
+
+    <section id="catalog" class="section catalog">
       <h2>Daftar Buku</h2>
       <div class="book-list">
-        <div class="book-card">
+        <div class="book-card" onclick="showDetail('Belajar HTML & CSS', 'Andi Prasetyo', 'Rp50.000')">
           <h3>Belajar HTML & CSS</h3>
           <p>Penulis: Andi Prasetyo</p>
           <p>Harga: Rp50.000</p>
         </div>
-        <div class="book-card">
+        <div class="book-card" onclick="showDetail('Dasar-Dasar JavaScript', 'Rina Setiawan', 'Rp65.000')">
           <h3>Dasar-Dasar JavaScript</h3>
           <p>Penulis: Rina Setiawan</p>
           <p>Harga: Rp65.000</p>
         </div>
-        <div class="book-card">
+        <div class="book-card" onclick="showDetail('Web Programming untuk Pemula', 'Budi Santoso', 'Rp75.000')">
           <h3>Web Programming untuk Pemula</h3>
           <p>Penulis: Budi Santoso</p>
           <p>Harga: Rp75.000</p>
         </div>
-        <div class="book-card">
-          <h3>Python untuk Data Science</h3>
-          <p>Penulis: Dedi Kurniawan</p>
-          <p>Harga: Rp85.000</p>
-        </div>
-        <div class="book-card">
-          <h3>Algoritma dan Pemrograman</h3>
-          <p>Penulis: Sari Dewi</p>
-          <p>Harga: Rp90.000</p>
-        </div>
-        <div class="book-card">
-          <h3>Database MySQL</h3>
-          <p>Penulis: Hendra Wijaya</p>
-          <p>Harga: Rp60.000</p>
-        </div>
-        <div class="book-card">
-          <h3>UI/UX Design Dasar</h3>
-          <p>Penulis: Lala Kartika</p>
-          <p>Harga: Rp70.000</p>
-        </div>
-        <div class="book-card">
-          <h3>Laravel untuk Pemula</h3>
-          <p>Penulis: Fajar Nugroho</p>
-          <p>Harga: Rp80.000</p>
-        </div>
-        <div class="book-card">
-          <h3>React JS Modern</h3>
-          <p>Penulis: Dian Rachmat</p>
-          <p>Harga: Rp95.000</p>
-        </div>
       </div>
+      <div id="book-detail" class="book-detail hidden">
+        <h3 id="detail-title"></h3>
+        <p id="detail-author"></p>
+        <p id="detail-price"></p>
+        <button onclick="closeDetail()">Tutup</button>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Hubungi Kami</h2>
+      <p>Email: tokobuku@email.com</p>
+      <p>Telp: 0812-3456-7890</p>
     </section>
   </main>
 
   <footer>
     <p>Kontak: tokobuku@email.com | Telp: 0812-3456-7890</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
